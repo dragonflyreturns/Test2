@@ -10,6 +10,7 @@
     </head>
     <body class="antialiased">
         <div class='posts'>
+            <h1>Blog Name</h1>
             @foreach($posts as $post)
                 <div class='post'>
                     <h2 class='title'>{{ $post->title }}</h2>
@@ -17,5 +18,6 @@
                 </div>
             @endforeach
         </div>
+        <div class='paginate'>{{ $posts->links()}}</div>
     </body>
 </html>
